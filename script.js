@@ -43,7 +43,7 @@ form.addEventListener('submit', function (e) {
         ],
         footer: {
           text: "Currículo enviado via site",
-          text: `Link: ${link}`
+          url: `Link: ${link}`
         },
         timestamp: new Date()
       }
