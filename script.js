@@ -43,7 +43,7 @@ form.addEventListener('submit', function (e) {
         ],
         footer: {
           text: "Currículo enviado via site",
-          url: "https://pm-curriculo-rp.vercel.app"
+          text: "https://pm-curriculo-rp.vercel.app"
         },
         timestamp: new Date()
       }
