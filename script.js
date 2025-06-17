@@ -42,9 +42,11 @@ form.addEventListener('submit', function (e) {
           { name: "📝 Motivação", value: motivacao }
         ],
         footer: {
-          text: "Currículo enviado via site",
-          url: `Link: ${link}`
+          text: "Currículo enviado via site"
         },
+        url: [
+          {link}
+        ],
         timestamp: new Date()
       }
     ]
