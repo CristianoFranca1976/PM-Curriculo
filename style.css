@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* font-family: "Savate", sans-serif; */
+/* font-family: "Caprasimo", serif; */
+/* font-family: "Edu NSW ACT Hand Pre", cursive; */
+/* font-family: "Libre Baskerville", serif; */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://fivepdmod.com/wp-content/uploads/2024/12/3-768x512.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Caprasimo", serif;
+  background: #020024;
+  background: linear-gradient(to right, #020024 0%, #f21505 50%, #0800ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-family: "Savate", sans-serif;
+  /* text-shadow: 0px 2px 2px rgba(250, 250, 250, 0.92); */
+  color: white;
+  font-weight: 500;
+  font-size: 1.5vh;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-weight: 500;
+  background: linear-gradient(to right, #0200242c 0%, #f215052f 50%, #0800ff3a 100%);
+  color: #fff;
+  outline: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+/* Corrigir autofill do Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #2ecc71;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+#mensagem {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox .checkmark {
+  height: 20px;
+  width: 20px;
+  background-color: #444;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.checkbox input:checked + .checkmark {
+  background-color: #2ecc71;
+}
+
+.checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked + .checkmark::after {
+  display: block;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

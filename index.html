@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cristiano Franca">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Website corriculum para policia RP Five m, para aqueles que procuram uma cidade para patrulhar">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/asstes/favicon.png" type="image/x-icon">
+  <title>Curriculum - Policia RP FIVE M</title>
+</head>
+<body>
+<div class="container">
+    <h1>Currículo Policial RP</h1>
+    <form id="curriculoForm">
+      
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+
+      <label for="apelido">Apelido usado na cidade:</label>
+      <input type="text" id="apelido" required>
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="date" id="nascimento" required>
+
+      <label for="experiencia">Tempo de polícia (experiência):</label>
+      <input type="text" id="experiencia" required>
+
+      <label for="subdivisao">Já participou de alguma subdivisão? Se sim, qual?</label>
+      <input type="text" id="subdivisao">
+
+      <label for="cidades">Cidades em que participou:</label>
+      <textarea id="cidades" rows="3" required></textarea>
+
+      <label for="personagem">Costuma jogar com qual personagem?</label>
+      <select id="personagem" required>
+        <option value="Steve (Homem)">Steve (Homem)</option>
+        <option value="Fox (Mulher)">Fox (Mulher)</option>
+      </select>
+
+      <label for="motivacao">Por que quer entrar para a polícia?</label>
+      <textarea id="motivacao" rows="3" required></textarea>
+
+      <label class="checkbox">
+        <input type="checkbox" id="termos" required>
+        <span class="checkmark"></span> Aceito os termos de uso do servidor.
+      </label>
+
+      <button type="submit">Enviar Currículo</button>
+    </form>
+    <p id="mensagem"></p>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
