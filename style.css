@@ -14,13 +14,14 @@ body {
   color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   height: 100vh;
   margin: 0;
   background-image: url("https://fivepdmod.com/wp-content/uploads/2024/12/3-768x512.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  perspective: 850px;
 }
 
 .container {
@@ -29,6 +30,8 @@ body {
   width: 100%;
   max-width: 450px;
   box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.7);
+  transform: rotateX(25deg) rotateY(0deg);
+  transform-style: preserve-3d
 }
 
 h1 {
