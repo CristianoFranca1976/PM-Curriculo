@@ -30,6 +30,7 @@ form.addEventListener('submit', function (e) {
     embeds: [
       {
         title: "📋 Novo Currículo Recebido",
+        description: "[Clique aqui para ver o site](https://pm-curriculo-rp.vercel.app)",
         color: 3447003,
         fields: [
           { name: "👤 Nome", value: nome },
@@ -42,8 +43,7 @@ form.addEventListener('submit', function (e) {
           { name: "📝 Motivação", value: motivacao }
         ],
         footer: {
-          text: "Currículo enviado via site",
-          text: "https://pm-curriculo-rp.vercel.app"
+          text: "Currículo enviado via site"
         },
         timestamp: new Date()
       }
