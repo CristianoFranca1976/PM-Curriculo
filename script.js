@@ -6,7 +6,7 @@ const mensagem = document.getElementById('mensagem');
 form.addEventListener('submit', function (e) {
   // Cole o seu webhook do Discord aqui:
   const WEBHOOK_URL = "https://pm-curriculo-rp.vercel.app/api/sendWebhook";
-  const link = "https://pm-curriculo-rp.vercel.app"
+  
   
   e.preventDefault();
 
