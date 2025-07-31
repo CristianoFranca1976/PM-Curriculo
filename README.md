@@ -6,4 +6,4 @@
 
 ![alt text](<Screenshot 2025-07-31 213803.png>)
 
-[Link: Curriculum]()
+[Link: Curriculum](https://pm-curriculo-rp.vercel.app/)
